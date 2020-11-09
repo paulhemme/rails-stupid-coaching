@@ -1,0 +1,13 @@
+<form action="/ask">
+    <input type="text" name=question">
+    <input type="submit" value="Ask!">
+</form>
+
+<h2><%= @question_asked %></h2>
+<p>-You</p>
+<br>
+<h2><%= @answer %></h2>
+<p>-Your Coach</p>
+
+<%= link_to "ask another question", ask_path %>
+
